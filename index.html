@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cadastro de Sala</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Cadastro de Sala Escolar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="container">
+  <div class="container">
     <h1 class="title">Cadastro de Sala Escolar</h1>
     <p class="subtitle">Formulário para cadastrar, reservar e liberar salas escolares</p>
 
@@ -51,12 +51,23 @@
         <button type="reset" class="btn btn-secondary">Limpar</button>
       </div>
     </form>
-  </main>
 
+    <h2 class="title">Salas Cadastradas</h2>
+    <table id="tabelaSalas" class="tabela-salas">
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Capacidade</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas de salas serão inseridas aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
